@@ -1,0 +1,137 @@
+<table>
+<tbody><tr>
+<th style="width:10%;">
+Command
+</th>
+<th style="width:30%;">
+Syntax
+</th>
+<th style="width:30%;">
+Description
+</th>
+<th style="width:30%;">
+Example
+</th>
+</tr>
+
+<tr>
+<td style="width:10%;">
+SELECT
+</td>
+<td style="width:30%;">
+<code>SELECT column1, column2, ... FROM table_name; </code>
+</td>
+<td style="width:30%;">
+<code>SELECT</code> statement is used to fetch data from a database.
+</td>
+<td style="width:30%;">
+<code>SELECT city FROM placeofinterest;</code>
+</td>
+</tr>
+
+<tr>
+<td style="width:10%;">
+WHERE
+</td>
+<td style="width:30%;">
+<code>SELECT column1, column2, ...FROM table_name WHERE condition;</code>
+</td>
+<td style="width:30%;">
+<code>WHERE</code> clause is used to extract only those records that fulfill a specified condition.
+</td>
+<td style="width:30%;">
+<code>SELECT * FROM placeofinterest WHERE city == 'Rome' ;</code>
+</td>
+</tr>
+
+<tr>
+<td style="width:10%;">
+COUNT
+</td>
+<td style="width:30%;">
+<code>SELECT COUNT * FROM table_name ; </code>
+</td>
+<td style="width:30%;">
+<code>COUNT</code> is a function that takes the name of a column as argument and counts the number of rows when the column is not NULL. 
+</td>
+<td style="width:30%;">
+<code>SELECT COUNT(country) FROM placeofinterest WHERE country='Canada';</code>
+</td>
+</tr>
+
+<tr>
+<td style="width:10%;">
+DISTINCT
+</td>
+<td style="width:30%;">
+<code>SELECT DISTINCT columnname FROM table_name;</code>
+</td>
+<td style="width:30%;">
+<code>DISTINCT</code> function is used to specify that the statement is a query which returns unique values in specified columns.
+</td>
+<td style="width:30%;">
+<code>SELECT DISTINCT country FROM placeofinterest WHERE type='historical';</code>
+</td>
+</tr>
+
+<tr>
+<td style="width:10%;">
+LIMIT
+</td>
+<td style="width:30%;">
+<code>SELECT * FROM table_name LIMIT number;</code>
+</td>
+<td style="width:30%;">
+<code>LIMIT</code> is a clause to specify the maximum number of rows the result set must have.
+</td>
+<td style="width:30%;">
+<code>SELECT * FROM placeofinterest  WHERE airport="pearson"  LIMIT 5;</code>
+</td>
+</tr>
+
+<tr>
+<td style="width:10%;">
+INSERT
+</td>
+<td style="width:30%;">
+<code>INSERT INTO table_name (column1,column2,column3...) VALUES(value1,value2,value3...); </code>
+</td>
+<td style="width:30%;">
+<code>INSERT</code> is used to insert new rows in the table.
+</td>
+<td style="width:30%;">
+<code>INSERT INTO placeofinterest (name,type,city,country,airport) VALUES('Niagara Waterfalls','Nature','Toronto','Canada','Pearson');</code>
+</td>
+</tr>
+
+<tr>
+<td style="width:10%;">
+UPDATE
+</td>
+<td style="width:30%;">
+<code>UPDATE table_name SET[[column1]=[VALUES]] WHERE [condition];</code>
+</td>
+<td style="width:30%;">
+<code>UPDATE</code> used to update the rows in the table. 
+</td>
+<td style="width:30%;">
+<code>UPDATE placeofinterest SET name = 'Niagara Falls' WHERE name = "Niagara Waterfalls";</code>
+</td>
+</tr>
+
+<tr>
+<td style="width:10%;">
+DELETE
+</td>
+<td style="width:30%;">
+<code>DELETE FROM table_name WHERE [condition]; </code>
+</td>
+<td style="width:30%;">
+<code>DELETE</code> statement is used to remove rows from the table which are specified in the WHERE condition.
+</td>
+<td style="width:30%;">
+<code>DELETE FROM placeofinterest WHERE city IN ('Rome','Vienna');</code>
+</td>
+</tr>
+
+</tbody></table>
