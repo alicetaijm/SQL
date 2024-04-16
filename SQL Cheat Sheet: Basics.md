@@ -1,3 +1,8 @@
+#### SQL Cheat Sheet: Basics
+
+  
+  
+
 Command
 
 Syntax
@@ -69,3 +74,37 @@ DELETE
 `DELETE` statement is used to remove rows from the table which are specified in the WHERE condition.
 
 `DELETE FROM placeofinterest WHERE city IN ('Rome','Vienna');`
+
+Author(s)
+---------
+
+[Malika Singla](https://www.linkedin.com/in/malika-goyal-04798622/)
+
+![](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DB0201EN-SkillsNetwork/images/footer_6b.png)
+
+Changelog
+---------
+
+Date
+
+Version
+
+Changed by
+
+Change Description
+
+2023-05-04
+
+1.1
+
+Benny
+
+Formatting changes
+
+2021-07-27
+
+1.0
+
+Malika
+
+Initial Version
