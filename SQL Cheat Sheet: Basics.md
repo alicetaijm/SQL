@@ -13,18 +13,3 @@
 | INSERT | `INSERT INTO table_name (column1,column2,column3...) VALUES(value1,value2,value3...);` | `INSERT` is used to insert new rows in the table. | `INSERT INTO placeofinterest (name,type,city,country,airport) VALUES('Niagara Waterfalls','Nature','Toronto','Canada','Pearson');` |
 | UPDATE | `UPDATE table_name SET[[column1]=[VALUES]] WHERE [condition];` | `UPDATE` used to update the rows in the table. | `UPDATE placeofinterest SET name = 'Niagara Falls' WHERE name = "Niagara Waterfalls";` |
 | DELETE | `DELETE FROM table_name WHERE [condition];` | `DELETE` statement is used to remove rows from the table which are specified in the WHERE condition. | `DELETE FROM placeofinterest WHERE city IN ('Rome','Vienna');` |
-
-Author(s)
----------
-
-[Malika Singla](https://www.linkedin.com/in/malika-goyal-04798622/)
-
-![](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DB0201EN-SkillsNetwork/images/footer_6b.png)
-
-Changelog
----------
-
-| Date | Version | Changed by | Change Description |
-| --- | --- | --- | --- |
-| 2023-05-04 | 1.1 | Benny | Formatting changes |
-| 2021-07-27 | 1.0 | Malika | Initial Version |
